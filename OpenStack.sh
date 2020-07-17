@@ -9,9 +9,9 @@ mkdir /RHEL7OSP-13.0
 mkdir /rhel-7.5-server-updates
 mkdir /rhel-7-server-additional
 mkdir /softwares
-mount RHEL7OSP-13.0-20180628.2-x86_64 /RHEL7OSP-13.0
-mount rhel-7.5-server-updates-20180628 /rhel-7.5-server-updates
-mount rhel-7-server-additional-20180628 /rhel-7-server-additional
+mount -o loop RHEL7OSP-13.0-20180628.2-x86_64 /RHEL7OSP-13.0
+mount -o loop rhel-7.5-server-updates-20180628 /rhel-7.5-server-updates
+mount -o loop rhel-7-server-additional-20180628 /rhel-7-server-additional
 cp -rfv /RHEL7OSP-13.0 /softwares
 cp -rfv /rhel-7.5-server-updates /softwares
 cp -rfv /rhel-7-server-additional /softwares
